@@ -29,8 +29,8 @@ public class BoardServiceImpl implements BoardService {
 			bb.setNum(1);
 			bb.setRe_ref(1);
 		}
-		bb.setNum(boardDAO.getMaxNum());
-		bb.setRe_ref(boardDAO.getMaxNum());
+		bb.setNum(boardDAO.getMaxNum()+1);
+		bb.setRe_ref(boardDAO.getMaxNum()+1);
 		bb.setDate(new Timestamp(System.currentTimeMillis()));
 		bb.setReadcount(0);
 		bb.setRe_seq(0);

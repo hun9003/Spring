@@ -24,7 +24,7 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public void insertBoard(BoardBean bb) {
-		System.out.println("BoardServiceImpl - getBoardNum()");
+		System.out.println("BoardServiceImpl - insertBoard()");
 		if(boardDAO.getMaxNum()==null) {
 			bb.setNum(1);
 			bb.setRe_ref(1);

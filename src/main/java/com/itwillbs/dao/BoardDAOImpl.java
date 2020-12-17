@@ -19,7 +19,7 @@ public class BoardDAOImpl implements BoardDAO {
 	public Integer getMaxNum() {
 		System.out.println("BoardDAOImpl - getBoardNum()");
 		
-		return sqlSession.selectOne(namespace+".getBoardNum");
+		return sqlSession.selectOne(namespace+".getMaxNum");
 	}
 
 	@Override
